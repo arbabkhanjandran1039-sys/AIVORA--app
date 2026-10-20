@@ -90,3 +90,6 @@ if(old && old.includes('[{"text"}')){localStorage.clear();}
 let saved=localStorage.getItem('aivora_chat');
 if(saved && !saved.includes('[{"text"}')){getBox().innerHTML=saved;}
 document.getElementById('userInput')?.addEventListener('input',checkBar);
+function toggleEmoji(){let i=document.getElementById('userInput');i.value+='😊';checkBar();}
+function attachFile(){alert('📎 Files jald ayega!');}
+function openCamera(){alert('📷 Camera jald ayega!');}
