@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIVORA - by Arbab</title>
+<link rel="stylesheet" href="style.css?v=10">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div id="splash">
+  <img src="splash.jpg" onerror="this.src='logo.jpg'">
+  <h1>AIVORA</h1>
+  <p>by Arbab · Lahore</p>
+</div>
+
+<div id="app">
+<header class="top-bar">
+  <div class="left"><img src="splash.jpg" onerror="this.src='logo.jpg'"><div><b>AIVORA</b><span>Welcome, Arbab</span></div></div>
+  <div class="right"><button class="dots" onclick="toggleMenu(event)">⋮</button>
+    <div id="topMenu" class="menu">
+      <div onclick="shareApp()">Share App</div>
+      <div onclick="showAbout()">About</div>
+      <div onclick="clearChat()">Clear Chat</div>
+      <div onclick="exportChat()">Export Chat</div>
+    </div>
+  </div>
+</header>
+
+<div id="chat-box">
+  <div class="welcome"><h2>AIVORA</h2><p>AI ASSISTANT<br><small>Ask anything. Discover everything.</small></p>
+  <div class="msg bot">Assalam-o-Alaikum Arbab! Main AIVORA hun, aapki madad ke liye hazir hun.</div>
+  </div>
+</div>
+
+<!-- YEHI WO BAR HAI JO AAPN CIRCLE KIYA THA -->
+<div class="input-area">
+  <button class="icon-btn" id="emojiBtn" onclick="toggleEmoji()">😊</button>
+  <input type="text" id="userInput" placeholder="Message" onkeypress="if(event.key==='Enter')sendMessage()">
+  <button class="icon-btn" onclick="attachFile()">📎</button>
+  <button class="icon-btn" onclick="openCamera()">📷</button>
+  <button class="mic-btn" id="micBtn" onclick="startVoice()">🎤</button>
+  <button class="send-btn" id="sendBtn" onclick="sendMessage()">➤</button>
+</div>
+
+</div>
+
+<div id="aboutScreen">
+  <div class="about-card">
+    <img src="splash.jpg" onerror="this.src='logo.jpg'">
+    <h2>AIVORA</h2>
+    <span>by Arbab Khan - Lahore, Pakistan</span>
+    <div class="about-text" id="aboutText"></div>
+    <button onclick="hideAbout()">Close</button>
+  </div>
+</div>
+
+<script src="script.js?v=10"></script>
+</body>
+</html>
