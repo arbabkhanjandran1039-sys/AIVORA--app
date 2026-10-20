@@ -24,3 +24,7 @@ body{background:#efeae2;height:100vh;overflow:hidden}
 .about-card img{width:70px;height:70px;border-radius:50%} .about-card h2{margin:10px 0 2px} .about-card span{font-size:12px;color:#666}
 .about-text{margin:15px 0;text-align:left;font-size:13.5px;line-height:1.6;color:#333;white-space:pre-line}
 .about-card button{width:100%;padding:10px;border:none;background:#111b21;color:#fff;border-radius:10px;margin-top:10px}
+/* Icons Fix - Natural */
+.icon-btn{font-family:"Segoe UI Emoji","Apple Color Emoji",sans-serif !important;font-size:22px !important;opacity:1 !important;filter:none !important;}
+.mic-btn,.send-btn{font-family:"Segoe UI Emoji",sans-serif !important;}
+#chat-box .welcome{background:#0d1b2a !important;} /* Aapka purana welcome card jaisa tha waisa hi rahega */
