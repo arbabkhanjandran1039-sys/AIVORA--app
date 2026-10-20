@@ -53,6 +53,21 @@ async function sendMessage(){
   box.scrollTop=box.scrollHeight;
   save();
 }
+function toggleEmoji(){
+ let b=document.getElementById('emojiBox');
+ if(!b){ // agar box nahi hai to banao
+   let box=document.createElement('div');
+   box.id='emojiBox';
+   box.style.cssText='position:absolute;bottom:65px;left:10px;background:#fff;border-radius:12px;padding:10px;box-shadow:0 5px 15px rgba(0,0,0,.2);z-index:99';
+   box.innerHTML='<span onclick="addEmoji(\'😊\')">😊</span> <span onclick="addEmoji(\'❤️\')">❤️</span> <span onclick="addEmoji(\'👍\')">👍</span>';
+   document.getElementById('app').appendChild(box);
+ } else {
+   b.style.display=b.style.display==='none'?'block':'none';
+ }
+}
+function addEmoji(e){document.getElementById('userInput').value+=e;checkBar();}
+function attachFile(){alert('File attach jald aayega');}
+function openCamera(){alert('Camera jald aayega');}
 
 function checkBar(){
   let i=document.getElementById('userInput');
