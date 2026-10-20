@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>AIVORA - by Arbab</title>
-<link rel="stylesheet" href="style.css?v=5">
+<link rel="stylesheet" href="style.css?v=10">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -30,17 +30,31 @@
 
 <div id="chat-box">
   <div class="welcome"><h2>AIVORA</h2><p>AI ASSISTANT<br><small>Ask anything. Discover everything.</small></p></div>
-  <div class="msg bot">Assalam-o-Alaikum Arbab! Main AIVORA hun. Puchiye kya madad karun?</div>
+  <div class="msg bot">Assalam-o-Alaikum Arbab! Main AIVORA hun, aapki madad ke liye hazir hun.</div>
 </div>
 
+<!-- YEHI WO BAR HAI JO AAPNE CIRCLE KIYA THA -->
 <div class="input-area">
-  <input type="text" id="userInput" placeholder="Message AIVORA...">
-  <button class="send" onclick="sendMessage()">➤</button>
-</div>
+  <button class="icon-btn">😊</button>
+  <input type="text" id="userInput" placeholder="Message" onkeypress="if(event.key==='Enter')sendMessage()">
+  <button class="icon-btn">📎</button>
+  <button class="icon-btn">📷</button>
+  <button class="mic-btn" id="micBtn" onclick="startVoice()">🎤</button>
+  <button class="send-btn" id="sendBtn" onclick="sendMessage()">➤</button>
 </div>
 
-<div id="aboutScreen"><div class="card"><h3>AIVORA</h3><p>by Arbab - Lahore<br>ChatGPT + Meta AI Style App<br>Secure & Fast</p><button onclick="hideAbout()">Close</button></div></div>
+</div>
 
-<script src="script.js?v=5"></script>
+<div id="aboutScreen">
+  <div class="about-card">
+    <img src="splash.jpg" onerror="this.src='logo.jpg'">
+    <h2>AIVORA</h2>
+    <span>by Arbab Khan - Lahore, Pakistan</span>
+    <div class="about-text" id="aboutText"></div>
+    <button onclick="hideAbout()">Close</button>
+  </div>
+</div>
+
+<script src="script.js?v=10"></script>
 </body>
 </html>
