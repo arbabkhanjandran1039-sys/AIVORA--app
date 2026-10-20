@@ -1,7 +1,7 @@
 // Splash hide
 setTimeout(()=>{document.getElementById('splash').style.display='none'},1200);
 
-// About - Final with Khan Jandrani
+// About - Final with Khan Jandran
 const aboutContent = `AIVORA - Advanced AI Assistant
 
 Developed by: Arbab Khan Jandran - Lahore, Pakistan
