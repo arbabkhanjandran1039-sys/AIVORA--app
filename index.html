@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AIVORA - by Arbab</title>
+<link rel="stylesheet" href="style.css?v=5">
+<link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+<div id="splash">
+  <img src="splash.jpg" onerror="this.src='logo.jpg'">
+  <h1>AIVORA</h1>
+  <p>by Arbab • Lahore</p>
+</div>
+
+<div id="app">
+<header class="top-bar">
+  <div class="left"><img src="splash.jpg" onerror="this.src='logo.jpg'"><div><b>AIVORA</b><span>Welcome, Arbab</span></div></div>
+  <div class="right"><button class="dots" onclick="toggleMenu(event)">⋮</button>
+    <div id="topMenu" class="menu">
+      <div onclick="shareApp()">🔗 Share App</div>
+      <div onclick="showAbout()">ℹ️ About</div>
+      <div onclick="clearChat()">🗑️ Clear Chat</div>
+      <div onclick="exportChat()">📤 Export Chat</div>
+    </div>
+  </div>
+</header>
+
+<div id="chat-box">
+  <div class="welcome"><h2>AIVORA</h2><p>AI ASSISTANT<br><small>Ask anything. Discover everything.</small></p></div>
+  <div class="msg bot">Assalam-o-Alaikum Arbab! Main AIVORA hun. Puchiye kya madad karun?</div>
+</div>
+
+<div class="input-area">
+  <input type="text" id="userInput" placeholder="Message AIVORA...">
+  <button class="send" onclick="sendMessage()">➤</button>
+</div>
+</div>
+
+<div id="aboutScreen"><div class="card"><h3>AIVORA</h3><p>by Arbab - Lahore<br>ChatGPT + Meta AI Style App<br>Secure & Fast</p><button onclick="hideAbout()">Close</button></div></div>
+
+<script src="script.js?v=5"></script>
+</body>
+</html>
