@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AIVORA</title><link rel="stylesheet" href="style.css?v=16">
+</head>
+<body>
+<div id="splash"><img src="splash.jpg"><h2>AIVORA</h2></div>
+<div id="app">
+<div class="top-bar"><div class="left"><img src="splash.jpg"><div><b>AIVORA</b><span>Welcome, Arbab</span></div></div><button class="dots" onclick="toggleMenu(event)">⋮</button><div class="menu" id="topMenu"><div onclick="shareApp()">Share App</div><div onclick="showAbout()">About</div><div onclick="clearChat()">Clear Chat</div><div onclick="exportChat()">Export</div></div></div>
+<div id="chat-box"><div class="welcome"><h2>AIVORA</h2><p>Advanced AI by Arbab Khan Jandrani</p></div></div>
+
+<div class="input-area">
+<button class="icon-btn" id="emojiBtn" onclick="toggleEmoji()">😊</button>
+<input id="userInput" placeholder="Message" autocomplete="off">
+<button class="icon-btn" onclick="attachFile()">📎</button>
+<button class="icon-btn" onclick="openCamera()">📷</button>
+<button class="mic-btn" id="micBtn" onclick="startVoice()">🎤</button>
+<button class="send-btn" id="sendBtn" onclick="sendMessage()">➤</button>
+</div>
+
+<div id="emojiBox" style="display:none;position:absolute;bottom:65px;left:10px;background:#fff;border-radius:12px;box-shadow:0 5px 20px rgba(0,0,0,.2);padding:10px;width:200px;z-index:50;">
+<span onclick="addEmoji('😊')">😊</span> <span onclick="addEmoji('❤️')">❤️</span> <span onclick="addEmoji('👍')">👍</span> <span onclick="addEmoji('😂')">😂</span> <span onclick="addEmoji('🙏')">🙏</span> <span onclick="addEmoji('🔥')">🔥</span>
+</div>
+
+</div>
+<div id="aboutScreen" onclick="hideAbout()"><div class="about-card"><img src="splash.jpg"><h2>AIVORA</h2><span>By Arbab Khan Jandrani - Lahore</span><div class="about-text" id="aboutText"></div><button onclick="hideAbout()">Close</button></div></div>
+<script src="script.js?v=16"></script>
+</body>
+</html>
