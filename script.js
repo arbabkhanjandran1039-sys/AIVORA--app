@@ -1,20 +1,25 @@
 setTimeout(()=>{document.getElementById('splash').style.display='none'},1500);
-const aboutContent = `AIVORA kya hai?
-AIVORA ek smart AI Assistant App hai, jise Arbab Khan ne Lahore, Pakistan me banaya hai.
 
-Iska maqsad aapko ChatGPT aur Meta AI ki tarah fori, sahi aur asaan malumat dena hai.
+const aboutContent = `AIVORA - Advanced AI Assistant
 
-Khasusiyat:
-• ChatGPT jaisa jawab, Meta AI jaisa design
-• Parhai, general knowledge, life problems me madad
-• Tez, mehfooz aur mobile-friendly
-• 100% free, koi login nahi
+Developed by: Arbab Khan Jandran - Lahore, Pakistan
 
-Banane wala:
-Arbab Khan Jandrani - Lahore
+What is AIVORA?
+AIVORA is an advanced AI Assistant, built like ChatGPT and Meta AI to give you fast, accurate and easy answers.
+
+Features:
+✓ ChatGPT-style human-like answers
+✓ Meta AI-style clean design
+✓ Help in studies, general knowledge & daily life
+✓ Fast, Secure, Mobile-friendly & Lightweight
+✓ 100% Free, No login required
+✓ Chat history saved
+
+Created by:
+Arbab Khan Jandran
 
 Mission:
-Pakistan ka apna AI Assistant banana jo har Pakistani ki madad kare.`;
+To build Pakistan's own AI Assistant that helps every Pakistani.`;
 
 document.getElementById('aboutText').innerText = aboutContent;
 
